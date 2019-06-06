@@ -1,2 +1,2 @@
 # eco
-Portal o ekologiji u svetu i Srbiji za početnike.
+Portal o ekologiji u svetu i Srbiji za eko početnike.
