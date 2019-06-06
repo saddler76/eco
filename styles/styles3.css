@@ -1,0 +1,54 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  margin: 0;
+}
+
+
+.header {
+  padding: 30px;
+  text-align: center;
+  background: green;
+  color: yellow;
+}
+
+/* Style the top navigation bar */
+.navbar {
+  display: flex;
+  background-color: #996633;
+  }
+
+/* Style the navigation bar links */
+.navbar a {
+  color: #90EE90;
+  padding: 14px 20px;
+  text-align: center;
+  border-bottom: 1px solid blue;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color: turquoise;
+  color: red;
+}
+
+
+
+/* Footer */
+.footer {
+  padding: 5px;
+  text-align: center;
+  background: #660033;
+  color: white;
+}
+
+  .row, .navbar {   
+    flex-direction: column;
+  }
+
+
+
+
