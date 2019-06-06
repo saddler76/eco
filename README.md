@@ -1,2 +1,2 @@
 # eco
-Sajt o ekologiji
+Portal o ekologiji u svetu i Srbiji.
