@@ -7,8 +7,8 @@ function validateForm() {
 }
 
 function validateForm2() {
-  var x = document.forms["formA"]["location"].value;
-  if (x == "") {
+  var y = document.forms["formA"]["location"].value;
+  if (y == "") {
     alert("Popunite polje");
     return false;
   }
