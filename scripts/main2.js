@@ -1,14 +1,16 @@
-function validateForm() {
+function validateForm()  {
+ 
   var x = document.forms["formA"]["firstname"].value;
-  if (x == "") {
+  if (x==null || x=="")
+     {
     alert("Popunite polje");
     return false;
   }
 }
 
-function validateForm2() {
   var y = document.forms["formA"]["location"].value;
-  if (y == "") {
+  if (y==null || y=="")
+     {
     alert("Popunite polje");
     return false;
   }
