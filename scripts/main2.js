@@ -5,3 +5,11 @@ function validateForm() {
     return false;
   }
 }
+
+function validateForm2() {
+  var x = document.forms["formA"]["location"].value;
+  if (x == "") {
+    alert("Popunite polje");
+    return false;
+  }
+}
