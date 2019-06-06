@@ -6,8 +6,7 @@ function validateForm()  {
     alert("Popunite polje");
     return false;
   }
-}
-
+ 
   var y = document.forms["formA"]["location"].value;
   if (y==null || y=="")
      {
