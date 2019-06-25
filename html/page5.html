@@ -1,34 +1,168 @@
-<!doctype html>
-<html>
-<head>
-<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">	
-    <title>Kontakt</title>
+<!DOCTYPE html>
+<html >
+  <head>
+	<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="portal za vesti i zanimacije o ekologiji" />
+	<meta name="robots" content="index" />
+	<meta name="keywords" content="ekologija, priroda, vesti, portal, Srbija" />
+    <title>Eko portal</title>
 	<link rel="stylesheet" href="../styles/styles5.css" />
-	<script async src="../scripts/main2.js"></script>
-  </head>
-<body>
-<!-- Header -->
-<div class="header">
-</div>
-<h1>Ukoliko imate predloge za bolji rad sajta ili ekološku borbu pišite nam putem donjeg formulara :) </h1>
- <form name="formA" autocomplete="off" action="https://www.momtastic.com/webecoist/2008/09/17/25-environmental-forums-and-social-media-sites-get-connected-with-the-guide-to-green-online-communities/" onsubmit="return validateForm() "method="post">
-  <p><label>Predlog: <input type="text" name="firstname" id="name"></label></p>
-  <p><label>Vaš kontakt e-mail: <input type="text" name="location" id="location"></label></p>
-  <p><input type="submit" value="Pošalji"></p>
-  <p></p>
-  <p><input type="reset" value="Brisanje"><p>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script  src="../scripts/main5.js"></script>
+	 <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 
+
+	<link rel='stylesheet' id='wp-block-library-css'  href='https://mdbootstrap.com/wp-includes/css/dist/block-library/style.min.css?ver=5.2.1' type='text/css' media='all' />
+<link rel='stylesheet' id='wc-block-style-css'  href='https://mdbootstrap.com/wp-content/plugins/woocommerce/assets/css/blocks/style.css?ver=3.6.4' type='text/css' media='all' />
+<link rel='stylesheet' id='contact-form-7-css'  href='https://mdbootstrap.com/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=5.1.3' type='text/css' media='all' />
+<style id='woocommerce-inline-inline-css' type='text/css'>
+.woocommerce form .form-row .required { visibility: visible; }
+</style>
+<link rel='stylesheet' id='wsl-widget-css'  href='https://mdbootstrap.com/wp-content/plugins/wordpress-social-login/assets/css/style.css?ver=5.2.1' type='text/css' media='all' />
+<link rel='stylesheet' id='compiled.css-css'  href='https://mdbootstrap.com/wp-content/themes/mdbootstrap4/css/compiled-4.8.2.min.css?ver=4.8.2' type='text/css' media='all' />
+
+<link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script> 
+  </head>
   
-</body>
-<!-- Footer -->
-<div class="footer">
-    <footer>
-<br>
-<a href="../index.html" title="Contact" >Glavna</a>
-<a href="page1.html" title="Contact" >Prijava</a>
-<a href="page2.html" title="Contact" >Vesti</a>
-<a href="page3.html" title="Contact" >Korisno</a>
-<a href="page4.html" title="Contact" >Zabava</a>
-&copy; Copyright 2019 WebSolutionsRS
-  </footer>
+  <body>
+     <div id="page-container">
+   <div id="content-wrap"> 
+	<div class="topnav" id="myHeader">
+		<a class="active"><img src="../images/flag.gif" id="flag" > Eko portal zelene Srbije <img src="../images/flag.gif" id="flag" ></a>
+  
+		<!-- Navigation links (hidden by default) -->
+	<div id="myLinks">
+		<a href="../index.html">Naslovna strana</a>
+		<a href="page1.html">Prijavi deponiju</a>
+		<a href="page2.html">Eko vesti</a>
+		<a href="page3.html">Eko linkovi</a>
+		<a href="page4.html">Eko zabava</a>
+		<a href="page5.html">Kontakt</a>
+		<a href="https://www.facebook.com/pages/category/Government-Organization/Ministarstvo-za%C5%A1tite-%C5%BEivotne-sredine-124519788215832/"><img src="../images/Fejsbuk.png" id="fejs" > Fejsbuk</a>
+		<a href="https://twitter.com/ministarstvozzs?lang=en"><img src="../images/Tviter.png" id="fejs" > Tviter</a>
+		<a href="https://www.instagram.com/ministarstvozzs/?hl=en"><img src="../images/Instagram.png" id="fejs" > Instagram</a>
+	</div>
+	
+		<!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+		<a href="javascript:void(0);" class="icon" onclick="myFunction2()">
+			<i class="fa fa-bars"></i>
+		</a>
+
+	</div>  
+
+	
+	
+	
+	
+	<script>
+// When the user scrolls the page, execute myFunction
+window.onscroll = function() {myFunction()};
+// Get the header
+var header = document.getElementById("myHeader");
+// Get the offset position of the navbar
+var sticky = header.offsetTop;
+// Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+} 
+
+</script>
+
+
+	
+	
+	
+ <!--Section: Live preview-->
+<form action="https://formspree.io/email@domain.tld" method="POST" class="p-1"> 
+
+    <!-- Grid row -->
+    <div class="row">
+
+      <!-- Grid column -->
+      <div class="col-lg-6 col-xl-5 mx-auto">
+
+        <!-- Section: form dark -->
+        <section class="form-dark mb-5">
+
+          <!--Form without header-->
+          <div class="card card-image" style="background-image: url('https://mdbootstrap.com/img/Photos/Others/pricing-table%20(7).jpg');">
+            <div class="text-white rgba-stylish-strong py-5 px-5 z-depth-4">
+
+              <!--Header-->
+              <div class="text-center">
+                <h3 class="white-text mb-5 mt-4 font-weight-bold text-uppercase">
+				<a class="orange-text font-weight-bold"><strong>Kontakt i slanje predloga:</strong></a></h3>
+              </div>
+
+			  
+			   
+              <div class="md-form">
+			  <label for="form100">Ime:</label>
+			  </br></br>
+			    <input type="text" id="form100" class="form-control" name="name" required oninvalid="setCustomValidity('Sva polja moraju da budu popunjena!')" oninput="setCustomValidity('')" />
+              </div>
+
+              <div class="md-form">
+			  <label for="form101">e-mail:</label>
+			  </br></br>
+                <input type="email" id="form101" class="form-control" name="email" required oninvalid="setCustomValidity('Polje mora da sadrži znak @ i tačku!')" oninput="setCustomValidity('')" />
+              </div>
+
+              <div class="md-form">
+			  <label for="form102">Predlog:</label>
+			  </br></br>
+                <input type="text" id="form102" class="form-control" name="suggestion"  required oninvalid="setCustomValidity('Sva polja moraju da budu popunjena!')" oninput="setCustomValidity('')" />
+              </div>
+
+              <div class="md-form">
+		     <label for="form103">Detalji:</label>
+			  </br></br>
+                <textarea id="form103" class="md-textarea form-control" rows="5" name="details" required oninvalid="setCustomValidity('Sva polja moraju da budu popunjena!')" oninput="setCustomValidity('')" /></textarea>
+              </div>
+
+              <!--Grid row-->
+              <div class="row d-flex align-items-center">
+
+                <!--Grid column-->
+                <div class="text-center col-md-12 mt-3 mb-2">
+                  <button type="submit" class="btn btn-success btn-block btn-rounded z-depth-1">Pošalji</button>
+                </div>
+                <!--Grid column-->
+              </div>
+              <!--Grid row-->
+
+            </div>
+      
+          <!--/Form without header-->
+
+        </section>
+        <!-- Section: form dark -->
+
+      </div>
+      <!-- Grid column -->
+
+    </div>
+    <!-- Grid row -->
+
+  </form>
+  <!--Section: Live preview-->
+	
+
+
+   </div>
+   <footer id="footer"></br>&copy; Copyright 2019 WebSolutionsRS</footer>
+ </div>
+  </body>
+
 </html>

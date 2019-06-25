@@ -9,8 +9,3 @@ function myFunction2() {
   }
 } 
 
-
-
-	
-	
-	

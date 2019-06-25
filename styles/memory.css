@@ -1,30 +1,14 @@
-
 body {
-	position: relative;
   font-family: Arial;
   background-color: orange;
+  background: #AAAAAA;
   text-align:center;
-  margin: 0;
-  background-image: url('../images/zlatibor.jpg');
+  margin: 0 0 100px 0;
+  background-image: url('../images/index.jpg');
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
-}
-
-
-
-
-
-
-* {
-  box-sizing: border-box;
-}
-
-
-
-a {
-    color: orange;
 }
 
 
@@ -35,7 +19,6 @@ a {
   border-radius: 5%;
   border: 2px solid #4da6ff;
 }
-
 
  h1 {
     color: orange;
@@ -53,26 +36,31 @@ a {
 }
 
 
-#header {
-  text-align:center;
-  padding:20px;	
-	}
+
+* {
+	
+  box-sizing: border-box;
+  
+}
 
 
- /* Style the navigation menu */
+
+
+
+
+/* Style the navigation menu */
 .topnav {
  overflow:hidden;
   background-color: blue;
-  color: white;
   position:relative;
-  top:0px;
   z-index:1000;
-  text-align:center;
     -moz-border-radius: 0px;
 	-webkit-border-radius: 0px 0px 3px 3px;
 	border-radius: 0px 0px 20px 20px; 
-	
 }
+
+
+
 
 
 /* Hide the links inside the navigation menu (except for logo/home) */
@@ -81,6 +69,8 @@ a {
   text-decoration: underline;
 
  }
+
+ 
  
 
 
@@ -101,7 +91,7 @@ a {
   position: relative;
   right: 0;
   top: 0;
-color: white;
+
 }
 
 /* Add a grey background color on mouse-over */
@@ -119,8 +109,6 @@ color: white;
   color: white;
   pointer-events: none;
 }
-
-
 
 
 .active a:hover {
@@ -156,23 +144,31 @@ color: white;
 
 
 
+.tile1, .tile2, .tile3, .tile4, .tile5, .tile6, .tile7, .tile8, .tile9, .tile10, .tile11, .tile12, .tile13, .tile14, .tile15, .tile16 {
+  display: table-cell;
+  width: 90px;
+  height: 90px;
+  border: 1px solid white;
+  background: url(../images/unt.jpg); 
+  cursor: pointer;
+}
 
-
-
-.form-gradient .header {
-  border-top-left-radius: .3rem;
-  border-top-right-radius: .3rem; }
-
-.form-gradient input[type=text]:focus:not([readonly]) {
-  border-bottom: 1px solid #fd9267;
-  box-shadow: 0 1px 0 0 #fd9267; }
-
-.form-gradient input[type=text]:focus:not([readonly]) + label {
-  color: #4f4f4f; }
-
-.form-gradient textarea.md-textarea:focus:not([readonly]) {
-    border-bottom: 1px solid #fd9267;
-    box-shadow: 0 1px 0 0 #fd9267; }
+.tile1 {background-position: 0 0;}
+.tile2 {background-position: -90px 0;}
+.tile3 {background-position: -180px 0;}
+.tile4 {background-position: -270px 0;}
+.tile5 {background-position: 0 -90px;}
+.tile6 {background-position: -90px -90px;}
+.tile7 {background-position: -180px -90px;}
+.tile8 {background-position: -270px -90px;}
+.tile9 {background-position: 0 -180px;}
+.tile10 {background-position: -90px -180px;}
+.tile11 {background-position: -180px -180px;}
+.tile12 {background-position: -270px -180px;}
+.tile13 {background-position: 0 -270px;}
+.tile14 {background-position: -90px -270px;}
+.tile15 {background-position: -180px -270px;}
+.tile16 {background: white; cursor: default;}
 
 
 
@@ -190,10 +186,10 @@ color: white;
 }
 
 #footer {
-  position: absolute;
+  position: fixed;
   bottom: 0;
   width: 100%;
-  height: 3rem;            /* Footer height */
+  height: 2.5rem;            /* Footer height */
     background-color: brown;
   color: aquamarine;
   text-align: center;

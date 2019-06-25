@@ -1,12 +1,66 @@
 <!DOCTYPE html>
-<html>
-<head>
-<title>Korisni linkovi o ekologiji</title>
-<meta http-equiv="Content-Type" name="viewport" content="text/html, charset=ISO-8859-1, width=device-width, initial-scale=1">
-<link rel="stylesheet" href="../styles/styles3.css" />
-</head>
-<body>
+<html >
+  <head>
+	<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="portal za vesti i zanimacije o ekologiji" />
+	<meta name="robots" content="index" />
+	<meta name="keywords" content="ekologija, priroda, vesti, portal, Srbija" />
+    <title>Eko portal</title>
+	<link rel="stylesheet" href="../styles/styles3.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+	<script  src="../scripts/main3.js"></script>
+  </head>
+  
+  <body>
+     <div id="page-container">
+   <div id="content-wrap"> 
+	<div class="topnav" id="myHeader">
+		<a class="active"><img src="../images/flag.gif" id="flag" > Eko portal zelene Srbije <img src="../images/flag.gif" id="flag" ></a>
+  
+		<!-- Navigation links (hidden by default) -->
+	<div id="myLinks">
+		<a href="../index.html">Naslovna strana</a>
+		<a href="page1.html">Prijavi deponiju</a>
+		<a href="page2.html">Eko vesti</a>
+		<a href="page3.html">Eko linkovi</a>
+		<a href="page4.html">Eko zabava</a>
+		<a href="page5.html">Kontakt</a>
+		<a href="https://www.facebook.com/pages/category/Government-Organization/Ministarstvo-za%C5%A1tite-%C5%BEivotne-sredine-124519788215832/"><img src="../images/Fejsbuk.png" id="fejs" > Fejsbuk</a>
+		<a href="https://twitter.com/ministarstvozzs?lang=en"><img src="../images/Tviter.png" id="fejs" > Tviter</a>
+		<a href="https://www.instagram.com/ministarstvozzs/?hl=en"><img src="../images/Instagram.png" id="fejs" > Instagram</a>
+	</div>
+	
+		<!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+		<a href="javascript:void(0);" class="icon" onclick="myFunction2()">
+			<i class="fa fa-bars"></i>
+		</a>
+
+	</div>  
+
+	
+	
+	<script>
+// When the user scrolls the page, execute myFunction
+window.onscroll = function() {myFunction()};
+// Get the header
+var header = document.getElementById("myHeader");
+// Get the offset position of the navbar
+var sticky = header.offsetTop;
+// Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+} 
+
+</script>
+	
+
+	
+	
 <!-- Header -->
 <div class="header">
   <h1>Korisni linkovi</h1>
@@ -29,18 +83,10 @@
    <a href="https://savskinasip.com/">Udru&#382;enje za za&scaron;titu Savskog nasipa</a>
 </div>
 
-<!-- Footer -->
-<div class="footer">
-    <footer>
-<br>
-<a href="../index.html" title="Contact" >Glavna</a>
-<a href="page1.html" title="Contact" >Prijava</a>
-<a href="page2.html" title="Contact" >Vesti</a>
-&copy; Copyright 2019 WebSolutionsRS
-<a href="page4.html" title="Contact" >Zabava</a>
-<a href="page5.html" title="Contact" >Kontakt</a>
-  </footer>
- <br>
-</div>
-</body>
+
+   </div>
+   <footer id="footer"></br>&copy; Copyright 2019 WebSolutionsRS</footer>
+ </div>
+  </body>
+
 </html>

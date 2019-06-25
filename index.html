@@ -1,47 +1,113 @@
 <!DOCTYPE html>
-<html>
+<html >
   <head>
-	<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
-	<meta name=”description” content=”portal za vesti i zanimacije o ekologiji” />
-	<meta name=”robots” content=”index” />
-	<meta name=”keywords” content=”ekologija, priroda, vesti, portal, Srbija” />
+	<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="portal za vesti i zanimacije o ekologiji" />
+	<meta name="robots" content="index" />
+	<meta name="keywords" content="ekologija, priroda, vesti, portal, Srbija" />
     <title>Eko portal</title>
 	<link rel="stylesheet" href="styles/styles.css" />
-	<script async src="scripts/main.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script  src="scripts/main.js"></script>
+	
   </head>
+  
   <body>
-    <h1>Dobrodošli!</h1>
-    <h4 id='date'></h4>
-		<div class="row">
+   <div id="page-container">
+   <div id="content-wrap">  
+	<div class="topnav" id="myHeader">
+		<a class="active"><img src="images/flag.gif" id="flag" > Eko portal zelene Srbije <img src="images/flag.gif" id="flag" ></a>
+  
+		<!-- Navigation links (hidden by default) -->
+	<div id="myLinks">
+		<a href="index.html">Naslovna strana</a>
+		<a href="html/page1.html">Prijavi deponiju</a>
+		<a href="html/page2.html">Eko vesti</a>
+		<a href="html/page3.html">Eko linkovi</a>
+		<a href="html/page4.html">Eko zabava</a>
+		<a href="html/page5.html">Kontakt</a>
+		<a href="https://www.facebook.com/pages/category/Government-Organization/Ministarstvo-za%C5%A1tite-%C5%BEivotne-sredine-124519788215832/"><img src="images/Fejsbuk.png" id="fejs" > Fejsbuk</a>
+		<a href="https://twitter.com/ministarstvozzs?lang=en"><img src="images/Tviter.png" id="fejs" > Tviter</a>
+		<a href="https://www.instagram.com/ministarstvozzs/?hl=en"><img src="images/Instagram.png" id="fejs" > Instagram</a>
+	</div>
+	
+		<!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+		<a href="javascript:void(0);" class="icon" onclick="myFunction2()">
+			<i class="fa fa-bars"></i>
+		</a>
+
+	</div>  
+	
+	
+	
+<script>
+// When the user scrolls the page, execute myFunction
+window.onscroll = function() {myFunction()};
+// Get the header
+var header = document.getElementById("myHeader");
+// Get the offset position of the navbar
+var sticky = header.offsetTop;
+// Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+} 
+
+</script>
+	
+	
+<div>
+		<h1>Dobrodošli!</h1>
+		<h4 id="date"></h4>
+		
+		<script>
+n =  new Date();
+y = n.getFullYear();
+m = n.getMonth() + 1;
+d = n.getDate();
+document.getElementById("date").innerHTML = d + "/" + m + "/" + y;
+		</script>
+</div>
+ 
+
+	
+	<div class="row">
+		
 		<div class="column">
 			<a href="html/page1.html">
-				<img src="images/flag.jpg" alt="map of serbia" title="Report illegal dumping!" />
+				<img src="images/flag.jpg" alt="map of serbia" title="Report illegal dumping!" id='zum' />
+				<div class="text-block"><p><b>Prijavite divlju deponiju!</b></p></div>
 			</a>
-			<p>Prijavite divlju deponiju!</p>
-		</div>
+		</div>	
+			
 		<div class="column">
 			<a href="html/page2.html">
-				<img src="images/econews.JPG" alt="eko vesti" title="Green news!" id='eco'/>
+				<img src="images/econews.jpg" alt="eko vesti" title="Green news!" id='zum'/>
+				<div class="text-block"><p><b>Eko vesti!</b></p></div>
 			</a>
-			<p>Eko vesti!</p>
 		</div>
+	
 		<div class="column">
 			<a href="html/page3.html">
-				<img src="images/useful.jpg" alt="korisni linkovi" title="Usefull links" />
+				<img src="images/eco.jpg" alt="korisni linkovi" title="Usefull links" id='zum' />
+				<div class="text-block"><p><b>Korisni eko linkovi</b></p></div>	
 			</a>
-			<p>Korisni linkovi</p>		
 		</div>
+		
 		<div class="column">
 			<a href="html/page4.html">
-				<img src="images/fun.jpg" alt="igrice" title="Fun stuff!" />
+				<img src="images/fun.jpg" alt="igrice" title="Fun stuff!" id='zum' />
+				<div class="text-block"><p><b>Eko zabava!</b></p></div>
 			</a>
-			<p>Zabava!</p>
 		</div>
-		</div>
+		
+	</div>
+	
+   </div>
+   <footer id="footer"></br>&copy; Copyright 2019 WebSolutionsRS</footer>
+ </div>
   </body>
-  <footer>
-<br>
-&copy; Copyright 2019 WebSolutionsRS
-<a href="html/page5.html" title="Contact" >Kontakt</a>
-  </footer>
 </html>

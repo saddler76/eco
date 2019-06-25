@@ -1,16 +1,20 @@
-function validateForm()  {
- 
-  var x = document.forms["formA"]["firstname"].value;
-  if (x==null || x=="")
-     {
-    alert("Popunite polje");
-    return false;
+
+/* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
+function myFunction2() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
   }
- 
-  var y = document.forms["formA"]["location"].value;
-  if (y==null || y=="")
-     {
-    alert("Popunite polje");
-    return false;
-  }
-}
+} 
+
+
+
+
+	
+	
+
+	
+	
+	
